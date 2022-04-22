@@ -22,6 +22,14 @@ make: *** [Makefile:91: all] Error 2
 
 This fails with Ubuntu 22.04 + opencv/4.5.5 and with Ubuntu 20.04 + opencv/4.5.0
 
+Details of the Opencv Configuration during `conan install`:
+It includes:
+````
+--   OpenCV modules:
+--     To be built:                 calib3d core features2d flann gapi highgui imgcodecs imgproc ml photo stitching video videoio
+````
+
+Full detail:
 ````
 -- General configuration for OpenCV 4.5.5 =====================================
 --   Version control:               unknown
