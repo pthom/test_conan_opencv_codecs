@@ -23,9 +23,8 @@ def run_follow_log(cmd):
 
 def main():
 
-    # run(f"docker build -t {DOCKER_IMAGE_NAME} .")
+    run(f"docker build -t {DOCKER_IMAGE_NAME} .")
 
-    need_start_container = True
     active_containers = run("docker ps -a").split("\n")
     need_start_container = len(list(filter(lambda s: DOCKER_CONTAINER_NAME in s, active_containers))) == 0
 
