@@ -3,9 +3,9 @@ opencv/4.5.5
 
 [generators]
 cmake_find_package
+CMakeToolchain
 
 [options]
-opencv:with_ffmpeg=False
 opencv:shared=False
 opencv:with_gtk=False
 opencv:with_quirc=False
